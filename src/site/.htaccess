@@ -1,0 +1,13 @@
+# Necessary to prevent problems when using a controller named "index" and having a root index.php
+# more here: http://httpd.apache.org/docs/2.2/content-negotiation.html
+Options -MultiViews
+
+# Activates URL rewriting (like myproject.com/controller/action/1/2/3)
+RewriteEngine On
+Options -Indexes
+# Dont rewrite direct links to files or dirs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Pass the url to get parameter for index to parse
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
