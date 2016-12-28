@@ -1,3 +1,3 @@
 <?php
-define('PUBLIC_ROOT', 'localhost/euromed-remaster');
+define('PUBLIC_ROOT', 'http://localhost/euromed-remaster/src/site');
 ?>
