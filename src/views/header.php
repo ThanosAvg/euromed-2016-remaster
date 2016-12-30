@@ -6,5 +6,9 @@
 <!-- BOOTSTRAP CSS -->
 <link href="<?=PUBLIC_ROOT?>/assets/css/bootstrap.min.css" rel="stylesheet">
 
+<!-- MAIN CSS -->
+<link href="<?=PUBLIC_ROOT?>/assets/css/styles.css" rel="stylesheet">
+<link href="<?=PUBLIC_ROOT?>/assets/css/menu.css" rel="stylesheet">
 </head>
 <body>
+<?php require 'menu.php' ?>
