@@ -1,10 +1,9 @@
 <?php
-class DAO{
+class DatabaseService{
     private $database;
     
     function __construct(){
-        $opts = array(PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
-                      PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING);
+        $opts = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING);
         
         $this->database = new PDO(CONFIG_DB_DRIVER .
                                   ':host=' . CONFIG_DB_HOST .
@@ -46,12 +45,26 @@ class DAO{
         }
     }
 
-    public function all($table){
-        $sql = "SELECT * FROM " . $table;
+    public function all($class, $table){
+        $sql = 'SELECT * FROM ' . $table;
         $stmt = $this->database->prepare($sql);
         $stmt->execute();
-        $result = $stmt->fetchAll();
+        $result = $stmt->fetchAll(PDO::FETCH_CLASS, $class);
         return $result;
+    }
+
+    public function find($class, $table, $key, $id){
+        $sql = 'SELECT * FROM ' . $table .
+             ' WHERE ' . $key . ' = \'' . $id . '\'';
+        $stmt = $this->database->prepare($sql);
+        if($stmt->execute()){
+            $stmt->setFetchMode(PDO::FETCH_CLASS, $class); 
+            $result = $stmt->fetch();
+            return $result;
+        }
+        else{
+            return NULL;
+        }
     }
 }
 ?>
