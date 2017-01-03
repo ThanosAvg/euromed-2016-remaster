@@ -2,6 +2,7 @@
 define('APP_ROOT', realpath('../'));
 define('VIEWS', APP_ROOT . '/views');
 define('CONTROLLERS', APP_ROOT . '/controllers');
+define('MODELS', APP_ROOT . '/models');
 
 require(APP_ROOT . '/config.php');
 require("../controller.php");
