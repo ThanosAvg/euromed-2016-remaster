@@ -28,11 +28,16 @@ class UserDAO{
     }
 
     public function getAll(){
-        return $this->dbs->all("User", User::$table);
+        return $this->dbs->all('User', User::$table);
+    }
+
+    public function getByEmail($email){
+        return $this->dbs->query('User', 'SELECT * FROM users WHERE email = \'' .
+                                 $email . '\'');
     }
 
     public function find($id){
-        return $this->dbs->find("User", User::$table, User::$key, $id);
+        return $this->dbs->find('User', User::$table, User::$key, $id);
     } 
 }
 

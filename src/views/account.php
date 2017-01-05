@@ -8,7 +8,7 @@
         <h4 class="modal-title" id="myModalLabel">Registration</h4>
       </div>
       <div class="modal-body">
-        <form class="form-horizontal">
+        <form class="form-horizontal" id="register-form" action="register" method="post">
           <div class="form-group">
             <label for="inputEmail" class="col-sm-2 control-label">Email*</label>
             <div class="col-sm-8">
@@ -24,7 +24,7 @@
           <div class="form-group">
             <label for="inputPassword" class="col-sm-2 control-label">Password*</label>
             <div class="col-sm-8">
-              <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Confirm Password">
+              <input type="password" name="password_confirm" class="form-control" id="inputPassword" placeholder="Confirm Password">
             </div>
           </div> 
           <div class="form-group">
@@ -95,8 +95,9 @@
             </label>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Sign up</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <input type="hidden" value="register" name="action">
+              <input type="submit" class="btn btn-primary" value="Sign up">
           </div>
         </form>
       </div>

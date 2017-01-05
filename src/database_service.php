@@ -66,5 +66,17 @@ class DatabaseService{
             return NULL;
         }
     }
+
+    public function query($class, $sql){
+        $stmt = $this->database->prepare($sql);
+        if($stmt->execute()){
+            $stmt->setFetchMode(PDO::FETCH_CLASS, $class);
+            $result = $stmt->fetch();
+            return $result;
+        }
+        else{
+            return NULL;
+        }
+    }
 }
 ?>
