@@ -6,6 +6,9 @@
 <!-- JQUERY -->
 <script src="<?=PUBLIC_ROOT?>/assets/js/jquery-3.1.1.min.js"></script>
 
+<!-- JQUERY VAIDATION PLUGING -->
+<script src="<?=PUBLIC_ROOT?>/assets/js/jquery.validate.min.js"></script>
+
 <!-- BOOTSTRAP JS -->
 <script src="<?=PUBLIC_ROOT?>/assets/js/bootstrap.min.js"></script>
 
