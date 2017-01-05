@@ -22,7 +22,7 @@
 			</div>
 			<div id="header-right">
 				<a href="<?=PUBLIC_ROOT?>"><span class="glyphicon glyphicon-log-in"> Log-in | </span></a>
-				<a class="font_style" href="<?=PUBLIC_ROOT?>" style="text-decoration:none;"> Register</span></a>
+				<a class="font_style" href="#" data-toggle="modal" data-target="#registerModal" style="text-decoration:none;"> Register</span></a>
 			</div>
 		</div>
 	</nav>
@@ -55,4 +55,4 @@
     </div>
 	</div>
 </div>
-<?php require 'menu.php' ?>
+<?php require 'menu.php'; require 'account.php'; ?>
