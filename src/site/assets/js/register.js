@@ -22,11 +22,68 @@ $(function(){
             // Restore form inputs
             $myForm.find("input, button, select, textarea").prop("disabled", false);
             if(response === "true"){
-                alert("Registered!")
+                alert("Registered!");
             }
             else{
                 alert("Failed to register!");
             }
         });
-    })
-})
+    });
+});
+
+
+
+$(document).ready(function () {
+ 
+    $('#register-form').validate({
+        rules: {
+            email: {
+                required: true,
+                email: true
+            },
+            password: {
+                required: true,
+                minlength: 6
+               
+            },
+            password_confirm: {
+                required: true,
+                minlength: 6,
+                equalTo: "#password"
+            },
+            first_name: {
+                required: true
+            },
+            last_name: {
+                required: true
+            },
+            birthday: {
+                required: true
+            },
+            country: {
+                required: true
+            },
+            city: {
+                required: true
+            },
+            address: {
+                required: true
+            },
+            zip: {
+                required: true
+            },
+            phone: {
+                required: true
+            }
+            
+            
+           
+        },
+        errorElement: 'div',
+        messages: {
+            password_confirm: {
+                equalTo: "Passwords do not match."
+            }
+        }
+    });
+});

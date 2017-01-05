@@ -14,3 +14,12 @@ body{
 	font-size: 20px;
 
 }
+.error {
+	border-color: red;
+	box-shadow: 0 0 0 0;
+
+}
+.valid {
+	border-color: green;
+	box-shadow: 0 0 0 0;
+}
