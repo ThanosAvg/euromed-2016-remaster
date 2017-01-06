@@ -3,7 +3,7 @@ require MODELS . '/user_dao.php';
 
 class Register extends Controller{
     public function index($parameters){
-        if($_POST['action'] == "register"){
+        if($_POST['action'] == 'register'){
             $this->doRegister();
         }
     }

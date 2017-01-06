@@ -1,9 +1,21 @@
+function renderAlert(type, message){
+    var html =
+        '<div class="alert alert-' + type + '" role="alert">' + message + '</div>';
+    return html;
+}
+
 $(function(){
     var currentRequest;
     console.log(window.PUBLIC_ROOT);
     $("#register-form").submit(function(event){
         event.preventDefault();
 
+        // Check if form validates
+        if (!$(this).valid()){
+            $("#register-alert").html(renderAlert("danger", "<strong>Error!</strong>Correct the errors in red and try again"));
+            return false;
+        }
+        
         // If a request is still active abort it
         if (currentRequest){
             currentRequest.abort();
@@ -22,10 +34,11 @@ $(function(){
             // Restore form inputs
             $myForm.find("input, button, select, textarea").prop("disabled", false);
             if(response === "true"){
-                alert("Registered!");
+                $myForm.hide();
+                $("#register-alert").html(renderAlert("success", "Registered Successfully!"));
             }
             else{
-                alert("Failed to register!");
+                $("#register-alert").html(renderAlert("danger", "An error occured, please try again later"));
             }
         });
     });
@@ -48,7 +61,6 @@ $(document).ready(function () {
             },
             password_confirm: {
                 required: true,
-                minlength: 6,
                 equalTo: "#password"
             },
             first_name: {
@@ -79,7 +91,7 @@ $(document).ready(function () {
             
            
         },
-        errorElement: 'div',
+        errorElement: 'strong',
         messages: {
             password_confirm: {
                 equalTo: "Passwords do not match."

@@ -21,8 +21,13 @@
 				<a href="<?=PUBLIC_ROOT?>"><span class="glyphicon glyphicon-home"> Euromed2016</span></a>
 			</div>
 			<div id="header-right">
-				<a href="<?=PUBLIC_ROOT?>"><span class="glyphicon glyphicon-log-in"> Log-in | </span></a>
-				<a class="font_style" href="#" data-toggle="modal" data-target="#registerModal" style="text-decoration:none;"> Register</span></a>
+                            <div id="logged-out-menu" style="display:none">
+				<a href="#"><span class="glyphicon glyphicon-log-in" data-toggle="modal" data-target="#loginModal"> Log-in</span></a> | 
+				<a class="font_style" href="#" data-toggle="modal" data-target="#registerModal" style="text-decoration:none;">Register</span></a>
+                            </div>
+                            <div id="logged-in-menu" style="display:none">
+                                <a href="#">My Profile</a>
+                            </div>
 			</div>
 		</div>
 	</nav>
@@ -45,10 +50,10 @@
     	<div class="social_box">
     		<ul class="list-inline">
     			<li>
-    				<a href="https://www.facebook.com/666633476791951"><span class="fa fa-facebook"></span></span></a>
+    				<a href="https://www.facebook.com/666633476791951" target="_blank"><span class="fa fa-facebook"></span></span></a>
     			</li>
     			<li>
-    				<a href="https://twitter.com/EuroMed2016"><span class="fa fa-twitter"></span></span></a>
+    				<a href="https://twitter.com/EuroMed2016" target="_blank"><span class="fa fa-twitter"></span></span></a>
     			</li>
     		</ul>
     	</div>
