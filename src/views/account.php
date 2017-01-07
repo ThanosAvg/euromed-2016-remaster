@@ -135,6 +135,7 @@
                             <input type="password" name="password" class="form-control" id="login-password">
                         </div>
                     </div>
+                    <span>You don't have an account? <a href="#" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Sign up</a></span>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         <input type="hidden" value="login" name="action">
