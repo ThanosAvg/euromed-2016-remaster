@@ -4,7 +4,7 @@
     <li>
         <a href="#">For <strong> Visitors</strong></a>
         <ul class="submenu">
-            <li><a href="#">Ticket registration</a></li>
+            <li><a href="<?=PUBLIC_ROOT?>/visitors/TicketRegistration">Ticket registration</a></li>
             <li><a href="#">Keynote Speakers</a></li>
             <li><a href="#">Conference Venue</a></li>
             <li><a href="#">Conference Excursion</a></li>
