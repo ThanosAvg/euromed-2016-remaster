@@ -1,12 +1,17 @@
-.container{
-	margin: 0 auto;
-	max-width: 1000px;
-	clear: both; 
+
+.link_style{
+	font-family: Abel;
+	font-size: 15px;
+	text-decoration: none !important;
+	color: #fff;
 }
 
-.font_style{
-	font-family: Glyphicons Halflings;
-	font-size: 14px;
+.link_style: hover{
+	color: #e69b14;
+}
+
+.link_style: active{
+	color: #e69b14;
 }
 
 .search_box{
@@ -14,8 +19,8 @@
 }
 
 .social_box{
-	margin-top:5pxxx;
-	float:top;
+	margin-top:5px;
+	float:right;
 	font-size: 20px;
 }
 
@@ -31,7 +36,38 @@
 	padding: 15px 0px 15px 15px;
 }
 
-.logo{
-	width:60%;
-	cursor:pointer;
+.btn-brown {
+  color: #fff;
+  background-color: #e69b14;
+  border-color: #e69b14;
+}
+.btn-brown:focus,
+.btn-brown.focus {
+  color: #fff;
+  background-color: #e69b14;
+  border-color: #b07f27;
+}
+.btn-brown:hover {
+  color: #fff;
+  background-color: #7d5d23;
+  border-color: #b07f27;
+}
+.btn-brown:active,
+.btn-brown.active,
+.open > .dropdown-toggle.btn-brown {
+  color: #fff;
+  background-color: #7d5d23;
+  border-color: #b07f27;
+}
+
+.earth_color {
+  color: #428bca;
+}
+
+.earth_color:hover {
+	color: #1c4263;
+}
+
+.earth_color:active {
+	color: #1c4263;
 }

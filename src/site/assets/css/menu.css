@@ -5,7 +5,9 @@
     text-align: center;
     width:100%;
     font-size: 17px;
-    background-color: #efefef;
+    font-family: Abel;
+    background-color: #ccc;
+    border-radius: 5px;
 }
 
 .menubar li{
