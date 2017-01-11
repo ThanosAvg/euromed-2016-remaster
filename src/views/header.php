@@ -23,7 +23,7 @@
 			</div>
 			<div id="header-right">
       	<div id="logged-out-menu" style="display:none">
-					<a href="#" class="link_style" ><span class="glyphicon glyphicon-log-in earth_color" data-toggle="modal" data-target="#loginModal"></span>&nbspLog-in</a> | 
+					<a href="#" class="link_style" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in earth_color"></span>&nbspLog-in</a> | 
 					<a class="link_style" href="#" data-toggle="modal" data-target="#registerModal" style="text-decoration:none;"></span>Register</a>
         </div>
         <div id="logged-in-menu" style="display:none">
