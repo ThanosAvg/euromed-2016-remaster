@@ -38,7 +38,23 @@ class UserDAO{
 
     public function find($id){
         return $this->dbs->find('User', User::$table, User::$key, $id);
-    } 
+    }
+
+    public function save($obj){
+        $suc = $this->dbs->update(User::$table, array(
+            'first_name' => $obj->first_name,
+            'last_name'  => $obj->last_name,
+            'birthday'   => $obj->birthday,
+            'password'   => $obj->password,
+            'country'    => $obj->country,
+            'city'       => $obj->city,
+            'address'    => $obj->address,
+            'zip'        => $obj->zip,
+            'phone'      => $obj->phone,
+            'newsletter' => $obj->newsletter
+        ), User::$key, $obj->email);
+        return $suc;
+    }
 }
 
 ?>

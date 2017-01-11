@@ -78,5 +78,33 @@ class DatabaseService{
             return NULL;
         }
     }
+
+    function update($table, $values, $primkey, $id){
+        $sql = "UPDATE " . $table . " SET ";
+        
+        foreach($values as $key => $value){
+            $sql .= $key . " = ?,";
+        }
+        $sql = rtrim($sql, ","); // Remove ending comma
+        
+        
+        
+        $sql .= " WHERE " . $primkey . " = ?";
+        $stmt = $this->database->prepare($sql);
+
+        $i = 1;
+        foreach($values as &$value){
+            $stmt->bindParam($i, $value);
+            $i++;
+        }
+        $stmt->bindParam($i, $id);
+
+        if($stmt->execute()){
+            return TRUE;
+        }
+        else{
+            return FALSE;
+        }
+    }
 }
 ?>

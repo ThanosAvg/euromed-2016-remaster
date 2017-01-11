@@ -17,7 +17,7 @@ class User extends Model{
     public $newsletter;
 
     public static $table = "users";
-    public static $key = "id";
+    public static $key = "email";
     
     public static function build(
         $first_name,
