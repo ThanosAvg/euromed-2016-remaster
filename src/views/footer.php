@@ -16,6 +16,8 @@
 <script src="<?=PUBLIC_ROOT?>/assets/js/checkLogged.js"></script>
 <script src="<?=PUBLIC_ROOT?>/assets/js/register.js"></script>
 <script src="<?=PUBLIC_ROOT?>/assets/js/login.js"></script>
+<script src="<?=PUBLIC_ROOT?>/assets/js/bootstrap3-typeahead.min.js"></script>
+<script src="<?=PUBLIC_ROOT?>/assets/js/search.js"></script>
 	
 	<footer class="footer">
 		<div class="container">

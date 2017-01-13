@@ -24,10 +24,10 @@
         </div>
         <div class="col-md-3">
             <div class="thumbnail keynote-thumbnail">
-                <img class="img-rounded" src="<?=PUBLIC_ROOT?>/assets/img/speakers/Axel-Ermert-2016.jpg">
+                <img class="img-rounded" src="<?=PUBLIC_ROOT?>/assets/img/speakers/Sarah_Image.jpg">
                 <div class="caption keynote-caption">
-                    <h3>Mr. Axel Ermert</h3>
-                    <h5>Board member at blabla</h5>
+                    <h3>Prof. Dr. Sarah Whatley</h3>
+                    <h5>Centre for Dance Research (C-DaRE) at Coventry University, UK</h5>
                     <p><a href="#" class="btn btn-primary" role="button">Learn more</a></p>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                 <img class="img-rounded" src="<?=PUBLIC_ROOT?>/assets/img/speakers/Axel-Ermert-2016.jpg">
                 <div class="caption keynote-caption">
                     <h3>Mr. Axel Ermert</h3>
-                    <h5>Board member at blabla</h5>
+                    <h5>Institut für Museumsforschung (IfM) of the State Museums of Berlin (SMB-PK)</h5>
                     <p><a href="#" class="btn btn-primary" role="button">Learn more</a></p>
                 </div>
             </div>

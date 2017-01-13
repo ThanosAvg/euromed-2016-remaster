@@ -34,8 +34,9 @@
     </div>
 </div>
 <!-- # PAYMENT MODAL -->
-
-<h1 style="text-align: center">Participant Registration</h1>
+<div class="container">
+    <h2>Participant Registration</h2>
+</div>
 <hr>
 <div class="container" id="forms">
     <!-- TEMPLATE FORM -->

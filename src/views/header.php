@@ -42,12 +42,14 @@
   	</div>
   	<div class="col-md-1"></div>
   	<div class="col-md-4">
+            <form action="<?=PUBLIC_ROOT?>/base/search">
   		<div class="input-group">
-      	<input type="text" class="form-control" placeholder="Search for...">
+      	<input type="text" name="keywords" class="form-control search" placeholder="Search for..." data-provide="typeahead">
       	<span class="input-group-btn">
-        	<button class="btn btn-primary" type="button">&nbsp<i class="fa fa-search" aria-hidden="true"></i></button>
+        	<button class="btn btn-primary">&nbsp<i class="fa fa-search" aria-hidden="true"></i></button>
       	</span>
-    	</div>
+    	        </div>
+            </form>
     	<div class="social_box pull-right">
     		<ul class="list-inline">
     			<li>
