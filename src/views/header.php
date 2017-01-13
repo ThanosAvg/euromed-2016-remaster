@@ -27,7 +27,7 @@
 					<a class="link_style" href="#" data-toggle="modal" data-target="#registerModal" style="text-decoration:none;"></span>Sign up</a>
         </div>
         <div id="logged-in-menu" style="display:none">
-        	<a href="#" class="link_style">My Profile</a>
+        	<a href="<?=PUBLIC_ROOT?>/profile"class="link_style">My Profile</a>
         </div>
 			</div>
 		</div>
