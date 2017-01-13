@@ -24,7 +24,7 @@
 			<div id="header-right">
       	<div id="logged-out-menu" style="display:none">
 					<a href="#" class="link_style" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in earth_color"></span>&nbspLog-in</a> | 
-					<a class="link_style" href="#" data-toggle="modal" data-target="#registerModal" style="text-decoration:none;"></span>Register</a>
+					<a class="link_style" href="#" data-toggle="modal" data-target="#registerModal" style="text-decoration:none;"></span>Sign up</a>
         </div>
         <div id="logged-in-menu" style="display:none">
         	<a href="#" class="link_style">My Profile</a>
@@ -56,6 +56,9 @@
     			<li>
     				<a href="https://twitter.com/EuroMed2016" target="_blank"><span class="fa fa-twitter"></span></span></a>
     			</li>
+          <li>
+            <a href="<?=PUBLIC_ROOT?>/base/contact" class="contact-link">Contact</a>
+          </li>
     		</ul>
     	</div>
     </div>

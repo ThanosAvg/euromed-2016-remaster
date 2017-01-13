@@ -35,7 +35,7 @@
 </div>
 <!-- # PAYMENT MODAL -->
 
-<h1 style="text-align: center">Ticket Registration</h1>
+<h1 style="text-align: center">Participant Registration</h1>
 <hr>
 <div class="container" id="forms">
     <!-- TEMPLATE FORM -->
@@ -46,7 +46,7 @@
         </div>
         <div class="form-group">
             <label>Ticket Type: </label>
-            <select class="form-control input-type">
+            <select class="form-control input-type" type="text" class="form-control input-name" data-rule-required="true">
                 <option value="normal">Default (Full access, No Discount)</option>
                 <option value="student">Student (Full Access, Discount)</option>
                 <option value="workshop">Workshop only</option>
@@ -59,18 +59,18 @@
                 <input type="checkbox" class="input-bag" aria-label="..."> Conference Bag - 70€
             </label>
         </div>
-        <h2 style="text-align: right"><span>+<span class="cost">0</span>€</span></h2><button class="btn btn-default remove-btn" type="button"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Remove</button>
-        <hr>
+        <br>
+        <span class="price-tag"><span>+<span class="cost">0</span>€</span></span><br><button class="btn btn-default remove-btn" type="button"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Remove</button>
     </form>
     <!-- # TEMPLATE FORM -->
 
 </div>
-<div class="container">
+<div class="container container-content">
     <div style="text-align: right">
         <h2 style="text-align: right"><span>Total <span id="total-cost">0</span>€</span></h2>
         <button class="btn btn-default" id="add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
             Add Participant</button><button class="btn btn-primary" id="submit"><span class="glyphicon glyphicon-chevron-right"></span> Next</button>
-        <hr>
     </div>
 </div>
+<br>
 <script src="<?=PUBLIC_ROOT?>/assets/js/tickets.js" defer='defer'></script>

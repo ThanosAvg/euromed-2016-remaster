@@ -67,3 +67,20 @@ body{
 .borderless{
 	border-top: none;
 }
+
+.price-tag{
+	font-size: 28px;
+}
+
+.person-form {
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+}
+
+.keynote-caption {
+    text-align: center;
+}
+
+.keynote-thumbnail:hover {
+    background-color: #ededed;
+}

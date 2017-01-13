@@ -1,12 +1,15 @@
 <div class="container">
     <ul class="menubar">
-        <li><a href="#">About</a></li>
+        <li><a href="#">Conference</a>
+            <ul class="submenu">
+                <li><a href="<?=PUBLIC_ROOT?>/conference/keynote-speakers">Keynote Speakers</a></li>
+            </ul>
+        </li>
         <li><a href="#">Programme</a></li>
         <li>
-            <a href="#">For <strong> Visitors</strong></a>
+            <a href="#">for <strong> Participants</strong></a>
             <ul class="submenu">
-                <li><a href="<?=PUBLIC_ROOT?>/visitors/TicketRegistration">Ticket registration</a></li>
-                <li><a href="#">Keynote Speakers</a></li>
+                <li><a href="<?=PUBLIC_ROOT?>/visitors/TicketRegistration">Registration</a></li>
                 <li><a href="#">Conference Venue</a></li>
                 <li><a href="#">Conference Excursion</a></li>
                 <li><a href="#">Travelling info</a></li>
@@ -15,7 +18,7 @@
             </ul>
         </li>
         <li>
-            <a href="#">For <strong> Speakers / Submitters</strong></a>
+            <a href="#">for <strong> Submitters</strong></a>
             <ul class="submenu">
                 <li><a href="#">Speaker Info</a></li>
                 <li><a href="#">Guidelines and Information</a></li>
@@ -23,15 +26,15 @@
             </ul>
         </li>
         <li>
-            <a href="#">For <strong> Exhibitors </strong></a>
+            <a href="#">for <strong> Exhibitors </strong></a>
             <ul class="submenu">
                 <li><a href="#">Exhibitor Information</a></li>
                 <li><a href="#">Exhibitors</a></li>
                 <li><a href="#">Exhibitor Registration</a></li>
             </ul>
         </li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Venue</a></li>
         <li><a href="#">Multimedia</a></li>
-        <li><a href="#">Older Conferences</a></li>
+        <li><a href="#">Past Events</a></li>
     </ul>
 </div>
