@@ -27,7 +27,9 @@
 					<a class="link_style" href="#" data-toggle="modal" data-target="#registerModal" style="text-decoration:none;"></span>Sign up</a>
         </div>
         <div id="logged-in-menu" style="display:none">
-        	<a href="<?=PUBLIC_ROOT?>/profile"class="link_style">My Profile</a>
+            <a href="<?=PUBLIC_ROOT?>/profile" class="link_style"><span class="glyphicon glyphicon-user earth_color"></span>&nbspMy Profile</a>
+          <span> | </span>
+          <a href="<?=PUBLIC_ROOT?>/login/logout" class="link_style"><span class="glyphicon glyphicon-log-out earth_color"></span>&nbspLogout</a>
         </div>
 			</div>
 		</div>

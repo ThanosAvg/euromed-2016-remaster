@@ -9,6 +9,9 @@ class Login extends Controller{
         else if(isset($parameters[1]) && $parameters[1] == 'check'){
             $this->doLoginCheck();
         }
+        else if(isset($parameters[1]) && $parameters[1] == 'logout'){
+            $this->doLogout();
+        }
     }
 
     public function doLoginCheck(){
@@ -44,6 +47,15 @@ class Login extends Controller{
                 }
             }
         }
+    }
+
+    private function doLogout(){
+        session_start();
+        setcookie(session_name(), '', 100);
+        session_unset();
+        session_destroy();
+        $_SESSION = array();
+        header('Location: ' . PUBLIC_ROOT);
     }
 }
 ?>

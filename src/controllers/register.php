@@ -14,13 +14,7 @@ class Register extends Controller{
             !isset($_POST['last_name']) || $_POST['last_name'] == "" ||
             !isset($_POST['password']) || $_POST['password'] == "" ||
             !isset($_POST['password_confirm']) || $_POST['password_confirm'] == "" ||
-            !isset($_POST['email']) || $_POST['email'] == "" ||
-            !isset($_POST['birthday']) || $_POST['birthday'] == "" ||
-            !isset($_POST['country']) || $_POST['country'] == "" ||
-            !isset($_POST['city']) || $_POST['city'] == "" ||
-            !isset($_POST['address']) || $_POST['address'] == "" ||
-            !isset($_POST['zip']) || $_POST['zip'] == "" ||
-            !isset($_POST['phone']) || $_POST['phone'] == ""
+            !isset($_POST['email']) || $_POST['email'] == ""
         ){
             echo 'false';
         }
@@ -43,12 +37,12 @@ class Register extends Controller{
                 $_POST['last_name'],
                 $hash_password,
                 $_POST['email'],
-                $_POST['birthday'],
-                $_POST['country'],
-                $_POST['city'],
-                $_POST['address'],
-                $_POST['zip'],
-                $_POST['phone'],
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
                 $newsletter
             );
             $result = $dao->create($user);
