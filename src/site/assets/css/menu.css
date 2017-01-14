@@ -29,6 +29,7 @@
     color: white;
     transition: color 0.1s;
     transition: background-color 0.1s;
+    box-shadow: 0 2px 8px #686868;
 }
 
 .menubar a:active{
@@ -43,6 +44,8 @@
     padding: 0;
     margin: 0;
     background-color: #efefef;
+    min-width: 200px;
+    box-shadow: 0 2px 8px #686868;
 }
 
 .submenu li{
