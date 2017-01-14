@@ -39,12 +39,15 @@
 </div>
 <hr>
 <div class="container" id="forms">
+    <div id="alert-remove" style="display: none" class="alert alert-danger" role="alert">You have to register at least one person</div>
     <!-- TEMPLATE FORM -->
     <form class="person-form form-inline" style="display:none">
         <div class="form-group">
-            <label>Name: </label>
-            <input type="text" class="form-control input-name" data-rule-required="true" required>
-        </div>
+            <label>First Name: </label>
+            <input type="text" class="form-control input-name input-first" data-rule-required="true" required><br>
+            <label>Last Name:</label>
+            <input type="text" class="form-control input-name input-last" data-rule-required="true" required>
+        </div><br><br>
         <div class="form-group">
             <label>Ticket Type: </label>
             <select class="form-control input-type" type="text" class="form-control input-name" data-rule-required="true">
@@ -60,7 +63,7 @@
                 <input type="checkbox" class="input-bag" aria-label="..."> Conference Bag - 70€
             </label>
         </div>
-        <br>
+        <br><br>
         <span class="price-tag"><span>+<span class="cost">0</span>€</span></span><br><button class="btn btn-default remove-btn" type="button"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Remove</button>
     </form>
     <!-- # TEMPLATE FORM -->

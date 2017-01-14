@@ -54,7 +54,17 @@ $(document).ready(function(){
     });
 
     $("#forms").on("click", ".remove-btn", function(){
-        $(this).closest("form").remove();
+        if($(".person-form").length > 2){
+            // We cant delete the last one
+            $("#alert-remove").hide();
+            $(this).closest("form").remove();
+        }
+        else{            
+            $("#alert-remove").show();
+            setTimeout(function(){
+                $("#alert-remove").fadeOut();
+            }, 3000);
+        }
     });
 
     $("#submit").click(function(){
