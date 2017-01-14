@@ -48,7 +48,7 @@
                     <div class="col-md-3">
                         <a href="<?=PUBLIC_ROOT?>" class="front-page-box-link">
                             <div class="thumbnail front-page-box">
-                                <span class="glyphicon glyphicon-book" style="font-size: 30px" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-map-marker" style="font-size: 30px" aria-hidden="true"></span>
                                 <div class="caption">
                                     <h4>Learn more about Cyprus</h4>
                                 </div>
