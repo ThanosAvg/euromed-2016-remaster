@@ -11,6 +11,18 @@ class Profile extends Controller{
             return ;
         }
         if(!isset($parameters[1])){
+            // Populate view variables
+            $userDAO = new UserDAO();
+            $myUser = $userDAO->find($_SESSION['user_email']);
+            $oldFirstName = $myUser->first_name;
+            $oldLastName = $myUser->last_name;
+            $oldBirthday = $myUser->birthday;
+            $oldCountry = $myUser->country;
+            $oldCity = $myUser->city;
+            $oldAddress = $myUser->address;
+            $oldZip = $myUser->zip;
+            $oldPhone = $myUser->phone;
+            $oldNewsletter = $myUser->newsletter;
             require VIEWS . '/header.php';
             require VIEWS . '/profile/index.php';
             require VIEWS . '/footer.php';
@@ -25,14 +37,14 @@ class Profile extends Controller{
             }
             else{
                 if(
-                    !isset($_POST['first_name']) || $_POST['first_name'] == "" ||
-                    !isset($_POST['last_name']) || $_POST['last_name'] == "" ||
-                    !isset($_POST['birthday']) || $_POST['birthday'] == "" ||
-                    !isset($_POST['country']) || $_POST['country'] == "" ||
-                    !isset($_POST['city']) || $_POST['city'] == "" ||
-                    !isset($_POST['address']) || $_POST['address'] == "" ||
-                    !isset($_POST['zip']) || $_POST['zip'] == "" ||
-                    !isset($_POST['phone']) || $_POST['phone'] == ""
+                    !isset($_POST['first_name']) ||
+                    !isset($_POST['last_name']) ||
+                    !isset($_POST['birthday']) ||
+                    !isset($_POST['country']) ||
+                    !isset($_POST['city']) ||
+                    !isset($_POST['address']) ||
+                    !isset($_POST['zip']) ||
+                    !isset($_POST['phone'])
                 ){
                     $error = "Invalid data";
                     require VIEWS . '/header.php';
@@ -53,6 +65,9 @@ class Profile extends Controller{
 
                 // Save the changes
                 $userDAO->save($myUser);
+
+                // Redirect user
+                header('Location: ' . PUBLIC_ROOT . '/profile');
             }
         }
     }
