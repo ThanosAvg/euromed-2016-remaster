@@ -22,6 +22,11 @@ class Base extends Controller{
             require VIEWS . '/base/programme.php';
             require VIEWS . '/footer.php';
         }
+        else if ($parameters[1] === 'empty') {
+            require VIEWS . '/header.php';
+            require VIEWS . '/base/empty.php';
+            require VIEWS . '/footer.php';
+        }
     }
 }
 ?>
