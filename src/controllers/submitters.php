@@ -56,7 +56,7 @@ class Submitters extends Controller{
             $userDAO = new UserDAO();
             $suc = $userDAO->storePaper($_SESSION['user_email'], $data);
             if($suc){
-                header('Location: ' . PUBLIC_ROOT . '/submitters/PaperSubmission?msg=0');
+                header('Location: ' . PUBLIC_ROOT . '/submitters/PaperSubmission?msg=3');
             }
             else{
                 header('Location: ' . PUBLIC_ROOT . '/submitters/PaperSubmission?msg=1');
