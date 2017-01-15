@@ -30,6 +30,7 @@ $(function(){
             if(response === "true"){
                 $myForm.hide();
                 $("#login-alert").html(renderAlert("success", "Logged in Successfully!"));
+                $("#login-alert").append("<button class='btn' onclick='$(\"#loginModal\").modal(\"hide\")'>Close</button>");
                 checkLogged();
             }
             else{
