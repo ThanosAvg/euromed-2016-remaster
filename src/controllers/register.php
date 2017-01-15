@@ -47,6 +47,10 @@ class Register extends Controller{
             );
             $result = $dao->create($user);
             if($result){
+                session_start();
+                $_SESSION['user_first_name'] = $user->first_name;
+                $_SESSION['user_last_name'] = $user->last_name;
+                $_SESSION['user_email'] = $user->email;
                 echo 'true';
             }
             else{

@@ -36,6 +36,7 @@ $(function(){
             if(response === "true"){
                 $myForm.hide();
                 $("#register-alert").html(renderAlert("success", "Registered Successfully!"));
+                checkLogged();
             }
             else{
                 $("#register-alert").html(renderAlert("danger", "An error occured, please try again later"));
