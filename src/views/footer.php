@@ -12,7 +12,7 @@
 <!-- BOOTSTRAP JS -->
 <script src="<?=PUBLIC_ROOT?>/assets/js/bootstrap.min.js"></script>
 
-<!-- REGISTER/LOGIN SCRIPTS -->
+<!-- REGISTER/LOGIN/GENERAL SCRIPTS -->
 <script src="<?=PUBLIC_ROOT?>/assets/js/checkLogged.js"></script>
 <script src="<?=PUBLIC_ROOT?>/assets/js/register.js"></script>
 <script src="<?=PUBLIC_ROOT?>/assets/js/login.js"></script>
