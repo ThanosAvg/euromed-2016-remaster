@@ -131,3 +131,17 @@ body{
     max-height:300px; 
     overflow-y: scroll;
 }
+
+.sponsors {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sponsors img{
+    padding: 10px;
+}
+
+.sponsors img{
+    width: 120px;
+}

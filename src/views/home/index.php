@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class="container container-content">
   <div class="container-fluid">
   	<div class="row">
   	  <div class="col-md-2">
@@ -58,5 +58,17 @@
                 </div>
   	  </div>
   	</div>
+        <div class=" row">
+            <div class="sponsors">
+                <h3>Sponsored by</h3>
+                        <img src="<?=PUBLIC_ROOT?>/assets/img/sponsors/sponsor1.jpg">
+                        <img src="<?=PUBLIC_ROOT?>/assets/img/sponsors/sponsor2.jpg">
+                        <img src="<?=PUBLIC_ROOT?>/assets/img/sponsors/sponsor3.jpg">
+                        <img src="<?=PUBLIC_ROOT?>/assets/img/sponsors/sponsor4.jpg">
+                        <br>
+                        <img src="<?=PUBLIC_ROOT?>/assets/img/sponsors/sponsor5.jpg">
+                        <img src="<?=PUBLIC_ROOT?>/assets/img/sponsors/sponsor6.jpg">
+            </div>
+        </div>
   </div>
 </div>
