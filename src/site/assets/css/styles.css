@@ -120,3 +120,9 @@ body{
 	color: #444444;
 	font-size: 18px;
 }
+
+.exhibitor-image{
+    display:block;
+    margin:0 auto;
+    margin-top:10px;
+}
