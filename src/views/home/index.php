@@ -4,11 +4,12 @@
   	<div class="row">
   	  <div class="col-md-2">
   	  	<h3>Dates</h3>
-  	  	<span class="side-text"><strike>Date 31/10/2016</strike></span><br>
-  	  	<span class="side-text">Date 5/11/2016</span><br><br>
+  	  	<span class="side-text"><strike>Date 12/09/2016</strike></span><br>
+  	  	<span class="side-text"><strike>Date 5/10/2016</strike></span><br>
+        <span class="side-text">Date 13/10/2016</span><br><br>
   	  	<h3>News</h3>
-  	  	<a class="side-text" href="#">Link to test</a><br>
-  	  	<a class="side-text" href="#">Link to test</a>
+  	  	<a class="side-text" href="<?=PUBLIC_ROOT?>/base/empty">news1</a><br>
+  	  	<a class="side-text" href="<?=PUBLIC_ROOT?>/base/empty">news2</a>
   	  </div>
   	  <div class="col-md-10">
   	  	<h2>Welcome</h2>
