@@ -126,3 +126,8 @@ body{
     margin:0 auto;
     margin-top:10px;
 }
+
+.info-panel{
+    max-height:300px; 
+    overflow-y: scroll;
+}

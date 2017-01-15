@@ -1,7 +1,7 @@
 <div class="container-content">
-  <h1 style="text-align: center">Attending Exhibitors</h1>
+	<div class="container">
+  <h2>Attending Exhibitors</h2>
   <hr>
-  <div class="container">
 		<ul class="list-group">
 				<li class="list-group-item">
 				<div class="row">
