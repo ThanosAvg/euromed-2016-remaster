@@ -58,6 +58,13 @@ $(document).ready(function(){
             // We cant delete the last one
             $("#alert-remove").hide();
             $(this).closest("form").remove();
+            $("#total-cost").text(function(){
+                var total = 0;
+                $(".cost").each(function(){
+                    total += parseInt($(this).text());
+                });
+                return total;
+            });
         }
         else{            
             $("#alert-remove").show();
