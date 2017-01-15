@@ -3,7 +3,8 @@
         $.getScript(PUBLIC_ROOT + "/assets/js/moment.js",function(){
             $.getScript(PUBLIC_ROOT + "/assets/js/bootstrap-datetimepicker.min.js", function(){
                 $('#birthday').datetimepicker({
-                    viewMode: 'years'
+                    viewMode: 'years',
+                    format: 'YYYY-MM-DD'
                 });
             });
         });    
@@ -18,7 +19,9 @@
                 </div>
             <? endif ?>
             <h1>My profile</h1>
+            <h4>Update your profile so we know more about you!</h4>
             <hr>
+            <h5>Change the fields you want and click on update.</h5>
             <div class="form-group profile-group row">
                 <label class="col-sm-2 control-label">Firstname</label>
                 <div class="col-sm-6">
@@ -35,7 +38,7 @@
                 <label class="col-sm-2 control-label">Birthday</label>
                 <div class="col-sm-6">
                     <div class='input-group date' id='birthday'>
-                        <input type='text' name="birthday" class="form-control" value="<?=empty($oldBirthdayName) ? '' : $oldBirthdayName ?>"/>
+                        <input type='text' name="birthday" class="form-control" value="<?=empty($oldBirthday) ? '' : $oldBirthday ?>"/>
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
                         </span>

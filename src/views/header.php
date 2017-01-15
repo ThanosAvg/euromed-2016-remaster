@@ -12,6 +12,7 @@
 <link href="<?=PUBLIC_ROOT?>/assets/css/styles.css" rel="stylesheet">
 <link href="<?=PUBLIC_ROOT?>/assets/css/menu.css" rel="stylesheet">
 <link href="<?=PUBLIC_ROOT?>/assets/css/header.css" rel="stylesheet">
+<link href="<?=PUBLIC_ROOT?>/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="main_wrapper">
