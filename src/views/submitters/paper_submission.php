@@ -3,14 +3,15 @@
   <div class="container">
     <h2>Paper Submission</h2>
     <hr>
-    <?php if(!empty($_GET['msg']) && $_GET['msg'] == 3): ?>
-        <br>
-    <?php elseif(!empty($_GET['msg']) && $_GET['msg'] == 1): ?>
+    
+    <?php if(empty($_GET['msg'])): ?>
+        <span></span>
+    <?php elseif($_GET['msg'] == 1): ?>
         <div class="alert alert-danger alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <strong>Oops!</strong> Upload failed. Please try again in a few moments.
         </div>
-    <?php elseif(!empty($_GET['msg']) && $_GET['msg'] == 2): ?>
+    <?php elseif($_GET['msg'] == 2): ?>
         <div class="alert alert-danger alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <strong>Oops!</strong> The file you provided is not a pdf! Please try again using a proper file format.

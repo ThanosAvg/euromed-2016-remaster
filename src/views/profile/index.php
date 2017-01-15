@@ -18,6 +18,14 @@
                     <strong>Oops!</strong> <?=$error?>
                 </div>
             <? endif ?>
+            <?php if(!empty($_GET['success'])): ?>
+                <hr>
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Profile updated!
+                </div>
+            <? endif ?>
+            
             <h1>My profile</h1>
             <h4>Update your profile so we know more about you!</h4>
             <hr>

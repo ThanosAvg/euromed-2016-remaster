@@ -73,9 +73,9 @@ class Profile extends Controller{
 
                 // Save the changes
                 $userDAO->save($myUser);
-
+                
                 // Redirect user
-                header('Location: ' . PUBLIC_ROOT . '/profile');
+                header('Location: ' . PUBLIC_ROOT . '/profile?success=1');
             }
         }
     }
