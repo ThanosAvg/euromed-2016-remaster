@@ -13,7 +13,7 @@
         <li>
             <a href="#">for <strong> Participants</strong></a>
             <ul class="submenu">
-                <li><a href="#">Pricing</a></li>
+                <li><a href="<?=PUBLIC_ROOT?>/visitors/pricing">Pricing</a></li>
                 <li><a href="<?=PUBLIC_ROOT?>/visitors/TicketRegistration">Registration</a></li>
                 <li><a href="#">Practical Information</a></li>
             </ul>

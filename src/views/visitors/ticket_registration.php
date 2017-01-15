@@ -35,7 +35,14 @@
 </div>
 <!-- # PAYMENT MODAL -->
 <div class="container">
+    <!-- 
+    <ol class="breadcrumb">
+        <li><a href="<?=PUBLIC_ROOT?>">Home</a></li>
+        <li class="active">Participant Registration</li>
+    </ol>
+    -->
     <h2>Participant Registration</h2>
+    <p>The interactive registration form will calculate the cost for you. Check out our <a href="<?=PUBLIC_ROOT?>/visitors/pricing">pricing</a>.</p>
 </div>
 <hr>
 <div class="container" id="forms">
