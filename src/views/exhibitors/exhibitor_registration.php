@@ -14,8 +14,9 @@
 	  	<input type="email" class="form-control" id="e_mail">
 	  	<label for="comment">Comments:</label>
 	  	<textarea class="form-control" rows="5" id="comment"></textarea>
+	  	<a class="btn btn btn-primary" style="margin-top:20px;" role="button">Submit Application</a>
   	</div>
-  	<h4>Note:<i class="fa fa-asterisk" aria-hidden="true"></i> members are required</h4>
+  	<h4>Fields with <i class="fa fa-asterisk" aria-hidden="true"></i> are required</h4>
   	<div class="col-md-2"></div>
 	</div>
 </div>
