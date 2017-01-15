@@ -27,6 +27,11 @@ class Base extends Controller{
             require VIEWS . '/base/empty.php';
             require VIEWS . '/footer.php';
         }
+        else if($parameters[1] === 'contact'){
+            require VIEWS . '/header.php';
+            require VIEWS . '/base/contact.php';
+            require VIEWS . '/footer.php';
+        }
     }
 }
 ?>
