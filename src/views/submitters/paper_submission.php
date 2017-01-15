@@ -3,6 +3,24 @@
   <div class="container">
     <h2>Paper Submission</h2>
     <hr>
+    <?php if(!empty($_GET['msg']) && $_GET['msg'] == 3): ?>
+        <br>
+    <?php elseif(!empty($_GET['msg']) && $_GET['msg'] == 1): ?>
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Oops!</strong> Upload failed. Please try again in a few moments.
+        </div>
+    <?php elseif(!empty($_GET['msg']) && $_GET['msg'] == 2): ?>
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Oops!</strong> The file you provided is not a pdf! Please try again using a proper file format.
+        </div>
+    <?php else: ?>
+        <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            File upload successful
+        </div>
+    <?php endif; ?>
     <div class="panel panel-default">
       <div class="panel-heading"><h4><i class="fa fa-cloud-upload" aria-hidden="true"></i> Paper Submission Capability</h4></div>
         <div class="panel-body">
@@ -43,17 +61,6 @@
         </div>
       </div>
     </div>
-    <?php if(!empty($_GET['msg']) && $_GET['msg'] == 0): ?>
-        <div class="alert alert-success alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            File upload successful
-        </div>
-    <?php elseif(!empty($_GET['msg']) && $_GET['msg'] == 1): ?>
-        <div class="alert alert-danger alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <strong>Oops!</strong> Upload failed. Please try again in a few moments.
-        </div>
-    <?php endif ?>
     <form id="paper-submit-form" name="paper-submit-form" method="post" action="<?=PUBLIC_ROOT?>/submitters/PaperSubmission/submit" enctype="multipart/form-data">  
       <div class="form-group content" style="max-width:250px;">
           <label>Paper Category: </label>
@@ -75,7 +82,7 @@
         <div id="submit-alert"></div>
     </form>
     <?php if ($show_prev): ?>
-        <a href="get">Download last submission (.pdf)</a>
+        <a href="<?=PUBLIC_ROOT?>/submitters/PaperSubmission/get">Download last submission (.pdf)</a>
     <?php endif ?>
   </div>
 </div>

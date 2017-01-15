@@ -31,7 +31,7 @@ class Submitters extends Controller{
                 }
                 require VIEWS . '/header.php';
                 require VIEWS . '/submitters/paper_submission.php';
-                require VIEWS . '/footer.php';
+                require VIEWS . '/footer.php';                
             }
             else if($parameters[2] === 'submit'){
                 $this->doUpload();
@@ -49,7 +49,7 @@ class Submitters extends Controller{
     }
 
     public function doUpload(){
-        print_r($_FILES['paper']['name']);
+        //print_r($_FILES['paper']['name']);
 	if($_FILES['paper']['type'] == 'application/pdf'){
             $data = file_get_contents($_FILES['paper']['tmp_name']);
             session_start();
@@ -63,7 +63,9 @@ class Submitters extends Controller{
             }
         }
 	else{
-	    echo "Unsupported format!<br>";
+	    //echo "Unsupported format!<br>";
+            header('Location: ' . PUBLIC_ROOT . '/submitters/PaperSubmission?msg=2');
+
         }
     }
 
