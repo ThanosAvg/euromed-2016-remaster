@@ -111,3 +111,12 @@ body{
 	display: block;
 	margin-bottom: 10px;
 }
+.time-cell {
+	width: 20%;
+	color: #555555;
+	font-size: 15px;
+}
+.description-cell {
+	color: #444444;
+	font-size: 18px;
+}

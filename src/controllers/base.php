@@ -17,6 +17,11 @@ class Base extends Controller{
             require VIEWS . '/base/search.php';
             require VIEWS . '/footer.php';
         }
+        else if($parameters[1] === 'programme'){
+            require VIEWS . '/header.php';
+            require VIEWS . '/base/programme.php';
+            require VIEWS . '/footer.php';
+        }
     }
 }
 ?>
