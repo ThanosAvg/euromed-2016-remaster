@@ -3,10 +3,10 @@
         <li><a href="#"><strong>Conference</strong></a>
             <ul class="submenu">
                 <li><a href="<?=PUBLIC_ROOT?>/conference/keynote-speakers">Keynote Speakers</a></li>
-                <li><a href="#">Venue</a></li>
+                <li><a href="<?=PUBLIC_ROOT?>/base/empty">Venue</a></li>
                 <li><a href="<?=PUBLIC_ROOT?>/conference/travel">Travelling Info</a></li>
-                <li><a href="#">Excursion</a></li>
-                <li><a href="#">About Cyprus</a></li>
+                <li><a href="<?=PUBLIC_ROOT?>/base/empty">Excursion</a></li>
+                <li><a href="<?=PUBLIC_ROOT?>/base/empty">About Cyprus</a></li>
             </ul>
         </li>
         <li><a href="<?=PUBLIC_ROOT?>/base/programme"><strong>Programme</strong></a></li>
@@ -15,7 +15,7 @@
             <ul class="submenu">
                 <li><a href="<?=PUBLIC_ROOT?>/visitors/pricing">Pricing</a></li>
                 <li><a href="<?=PUBLIC_ROOT?>/visitors/TicketRegistration">Registration</a></li>
-                <li><a href="#">Practical Information</a></li>
+                <li><a href="<?=PUBLIC_ROOT?>/base/empty">Practical Information</a></li>
             </ul>
         </li>
         <li>
@@ -34,7 +34,7 @@
                 <li><a href="<?=PUBLIC_ROOT?>/exhibitors/ExhibitorRegistration">Exhibitor Registration</a></li>
             </ul>
         </li>
-        <li><a href="#"><strong>Multimedia</strong></a></li>
+        <li><a href="<?=PUBLIC_ROOT?>/base/empty"><strong>Multimedia</strong></a></li>
         <li>
             <a href="#"><strong>Past Events</strong></a>
             <ul class="submenu">
