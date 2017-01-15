@@ -9,7 +9,7 @@
                 <li><a href="#">About Cyprus</a></li>
             </ul>
         </li>
-        <li><a href="#"><strong>Programme</strong></a></li>
+        <li><a href="<?=PUBLIC_ROOT?>/base/programme"><strong>Programme</strong></a></li>
         <li>
             <a href="#">for <strong> Participants</strong></a>
             <ul class="submenu">
