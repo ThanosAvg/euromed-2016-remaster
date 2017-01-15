@@ -145,3 +145,11 @@ body{
 .sponsors img{
     width: 120px;
 }
+
+.valid-color{
+    background-color: green;
+}
+
+.invalid-color{
+    background-color: red;
+}
