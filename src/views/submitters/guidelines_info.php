@@ -13,11 +13,11 @@
 	      </div>
 	      <div id="collapse1" class="panel-collapse collapse">
 	        <div class="panel-body info-panel">
-	        <h4>Full paper submission deadline:30 of July 2016 (24:00 UTC)</h4>
-	        <h4>Project & short paper submission deadline:30 of July 2016 (24:00 UTC)</h4>
-	        <h4>Camera ready full papers submission deadline:8 of September 2016</h4>
-	        <h4>Camera ready short papers submission deadline:8 of September 2016</h4>
-	        <h4>Workshop paper submission deadline:30 of September 2016</h4>
+	        <p class="welcome-text">Full paper submission deadline:30 of July 2016 (24:00 UTC)</p>
+	        <p class="welcome-text">Project & short paper submission deadline:30 of July 2016 (24:00 UTC)</p>
+	        <p class="welcome-text">Camera ready full papers submission deadline:8 of September 2016</p>
+	        <p class="welcome-text">Camera ready short papers submission deadline:8 of September 2016</p>
+	        <p class="welcome-text">Workshop paper submission deadline:30 of September 2016</p>
 
 	        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 	        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -32,12 +32,15 @@
 	        	<i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper Format</a>
 	        </h4>
 	      </div>
-	      <div id="collapse2" class="panel-collapse collapse">
+	      <div id="collapse2" class="panel-collapse collapse in">
 	        <div class="panel-body info-panel">
 	        <p>
-		        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-		        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	        	<strong>Instruction and templates</strong><br>
+		        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim semper urna in dapibus.
+		        Quisque ipsum sapien, viverra in ex vel, malesuada congue quam. Donec cursus sem sapien, sed convallis arcu feugiat vitae.
+		        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti.
+		        Mauris mauris tortor, rhoncus quis tellus a, hendrerit aliquet lorem. Cras ac tellus a nulla imperdiet vehicula.
+		        Quisque massa eros, facilisis ac consectetur sed, aliquet ac massa. Morbi ornare lobortis arcu, vitae pellentesque diam maximus vel.
 		      </p>
 		      </div>
 	      </div>
@@ -54,13 +57,16 @@
 	        <div class="panel-body info-panel">
 	        	<h4>
 		        <ol>
+		        	<p class="link_style">
 						  <li>Check if your file agrees with the paper format requirements above</li>
 						  <li>Navigate to the paper submission page</li>
+						  <li>Select the paper category of your file</li>
 						  <li>Click the select file button</li>
 						  <li>Navigate to your computer and select your paper</li>
 						  <li>Press the submit button</li>
 						  <li>In case you are not logged in you will be prompt to,
 						  or to create an account if you have not</li>
+						  </p>
 						</ol>
 						</h4>  
 	        </div>
