@@ -30,13 +30,13 @@
                             <div class="thumbnail front-page-box">
                                 <span class="glyphicon glyphicon-file" style="font-size: 30px" aria-hidden="true"></span>
                                 <div class="caption">
-                                    <h4>How to submit a paper</h4>
+                                    <h4>About paper submissions</h4>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="<?=PUBLIC_ROOT?>" class="front-page-box-link">
+                        <a href="<?=PUBLIC_ROOT?>/conference/travel" class="front-page-box-link">
                             <div class="thumbnail front-page-box">
                                 <span class="glyphicon glyphicon-plane" style="font-size: 30px" aria-hidden="true"></span>
                                 <div class="caption">

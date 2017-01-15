@@ -9,6 +9,11 @@ class Conference extends Controller{
             require VIEWS . '/conference/keynote.php';
             require VIEWS . '/footer.php';
         }
+        else if($parameters[1] === "travel"){
+            require VIEWS . '/header.php';
+            require VIEWS . '/conference/travel.php';
+            require VIEWS . '/footer.php';
+        }
     }
 }
 ?>

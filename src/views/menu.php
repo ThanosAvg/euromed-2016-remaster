@@ -4,7 +4,7 @@
             <ul class="submenu">
                 <li><a href="<?=PUBLIC_ROOT?>/conference/keynote-speakers">Keynote Speakers</a></li>
                 <li><a href="#">Venue</a></li>
-                <li><a href="#">Travelling Info</a></li>
+                <li><a href="<?=PUBLIC_ROOT?>/conference/travel">Travelling Info</a></li>
                 <li><a href="#">Excursion</a></li>
                 <li><a href="#">About Cyprus</a></li>
             </ul>
